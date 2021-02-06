@@ -30,4 +30,35 @@ e.g.
   '***********'
 ]
 */
-function buildTower(nFloors) {}
+function buildTower(nFloors) {
+
+  let i = 1
+  let y = nFloors
+ let flr = []
+ let groundSpaces =""
+  function stars(i){
+      let starsFloor =""
+      let x = i + (i - 1)
+      for (z=0; z<x; z++){
+          starsFloor = `*${starsFloor}`
+           } groundSpaces = groundSpaces+starsFloor
+           return flr.push(groundSpaces)
+  } 
+ function floors(y){
+      let spaces =""
+       let a = 0
+   while (a<y){
+   spaces = ` ${spaces}`
+   a++ 
+
+} return groundSpaces = spaces }       
+
+  while ( i<=nFloors ){
+      floors(y)
+      stars(i)
+      i++
+     y-- 
+  } flr.forEach(t => console.log(t))
+}
+
+
